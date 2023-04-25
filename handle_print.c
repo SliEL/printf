@@ -22,6 +22,8 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 	    {'c', print_char},
 	    {'s', print_string},
 	    {'%', print_percent},
+	    {'i', print_int},
+	    {'d', print_int},
 	    {'\0', NULL}};
 
 	for (i = 0; fmt_types[i].fmt != '\0'; i++)
